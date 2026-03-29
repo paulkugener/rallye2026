@@ -246,6 +246,13 @@ article img {
   margin-bottom: 1rem;
 }
 
+.card img {
+  max-width: 92%;
+  max-height: 8rem;
+  min-height: 5rem;
+  object-fit: contain;
+}
+
 .copy-cell {
   position: relative;
   padding-right: 2.5rem;
