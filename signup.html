@@ -53,19 +53,31 @@
       <table style="width:100%; border-collapse: collapse;">
         <tr>
           <th style="text-align:left; padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.2);">Nom du compte</th>
-          <td style="padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.1);">BRUCHER THIELTGEN &amp; P. – RALLYE 2026</td>
+          <td class="copy-cell" style="padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.1);">
+            <span class="copy-text">BRUCHER THIELTGEN &amp; P. – RALLYE 2026</span>
+            <button class="copy-btn" data-copy="BRUCHER THIELTGEN &amp; P. – RALLYE 2026" title="Copier">📋</button>
+          </td>
         </tr>
         <tr>
           <th style="text-align:left; padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.2);">Numéro de compte</th>
-          <td style="padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.1);">LU02 0019 8255 0614 3000</td>
+          <td class="copy-cell" style="padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.1);">
+            <span class="copy-text">LU02 0019 8255 0614 3000</span>
+            <button class="copy-btn" data-copy="LU02 0019 8255 0614 3000" title="Copier">📋</button>
+          </td>
         </tr>
         <tr>
           <th style="text-align:left; padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.2);">Code BIC</th>
-          <td style="padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.1);">BCEELULLXXX</td>
+          <td class="copy-cell" style="padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.1);">
+            <span class="copy-text">BCEELULLXXX</span>
+            <button class="copy-btn" data-copy="BCEELULLXXX" title="Copier">📋</button>
+          </td>
         </tr>
         <tr>
           <th style="text-align:left; padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.2);">Référence</th>
-          <td style="padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.1);">[Nom de l'équipe] + Inscription Rallye 2026</td>
+          <td class="copy-cell" style="padding:0.5rem; border-bottom:1px solid rgba(255,255,255,0.1);">
+            <span class="copy-text">[Nom de l'équipe] + Inscription Rallye 2026</span>
+            <button class="copy-btn" data-copy="[Nom de l'équipe] + Inscription Rallye 2026" title="Copier">📋</button>
+          </td>
         </tr>
       </table>
     </article>
@@ -74,6 +86,26 @@
   <footer class="container">
     <p>© 2026 Rallye. Ce site est construit avec <a href="https://picocss.com" target="_blank" rel="noopener">Picocss</a> et une ambiance musicale.</p>
   </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.copy-btn').forEach(function(button) {
+        button.addEventListener('click', function() {
+          var value = this.getAttribute('data-copy');
+          var original = button.textContent;
+          navigator.clipboard.writeText(value).then(function() {
+            button.textContent = '✓';
+            setTimeout(function() {
+              button.textContent = original;
+            }, 1400);
+          }).catch(function(err) {
+            console.error('Copie impossible', err);
+            alert('La copie a échoué. Veuillez copier manuellement : ' + value);
+            button.textContent = original;
+          });
+        });
+      });
+    });
+  </script>
   <script src="scripts.js"></script>
 </body>
 </html>

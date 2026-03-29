@@ -223,6 +223,44 @@ article img {
   margin-bottom: 1rem;
 }
 
+.copy-cell {
+  position: relative;
+  padding-right: 2.5rem;
+}
+
+.copy-btn {
+  position: absolute;
+  right: 0.2rem;
+  top: 0.3rem;
+  border: 1px solid rgba(10, 10, 10, 0.35);
+  background: rgba(17, 17, 17, 0.85);
+  color: #ffffff;
+  width: 1.8rem;
+  height: 1.8rem;
+  line-height: 1.75rem;
+  border-radius: 0.35rem;
+  cursor: pointer;
+  text-align: center;
+  padding: 0;
+  font-size: 0.8rem;
+}
+
+.copy-btn:hover {
+  background: rgba(0, 0, 0, 0.95);
+}
+
+.copy-btn:active {
+  background: rgba(10, 10, 10, 0.95);
+}
+
+.copy-btn:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.copy-btn:active {
+  background: rgba(255, 255, 255, 0.25);
+}
+
 article h3 {
   margin-top: 0;
   margin-bottom: 0.75rem;
