@@ -267,7 +267,8 @@ article img {
 article hr {
   border: none;
   border-top: 2px solid #c9a84c;
-  margin: 1.5rem 0;
+  margin: 1.5rem auto;
+  width: 140px;
 }
 
 .copy-cell {
