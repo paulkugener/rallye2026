@@ -229,11 +229,20 @@ article {
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-height: 10rem;
+}
+
+.card picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 .card img {
   max-width: 90%;
-  max-height: 4.5rem;
+  max-height: 8rem;
   object-fit: contain;
 }
 
@@ -244,13 +253,6 @@ article {
 
 article img {
   margin-bottom: 1rem;
-}
-
-.card img {
-  max-width: 92%;
-  max-height: 11rem;
-  min-height: 7rem;
-  object-fit: contain;
 }
 
 @media (max-width: 600px) {
