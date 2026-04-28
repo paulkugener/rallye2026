@@ -4,7 +4,16 @@
       "Bash(py -c ':*)",
       "Bash(python3 -c ' *)",
       "Bash(node -e ' *)",
-      "PowerShell(& \"C:\\\\Users\\\\user\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe\" -c \"from PIL import Image; print\\('Pillow OK'\\)\" 2>&1)"
+      "PowerShell(& \"C:\\\\Users\\\\user\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe\" -c \"from PIL import Image; print\\('Pillow OK'\\)\" 2>&1)",
+      "Bash(magick identify *)",
+      "Bash(python3 -c \"from PIL import Image; print\\('Pillow OK'\\)\")",
+      "Bash(python3 -c \"import cairosvg; print\\('CairoSVG OK'\\)\")",
+      "PowerShell(Get-Command magick -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Command gswin64c -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Command inkscape -ErrorAction SilentlyContinue)",
+      "PowerShell(C:\\\\Users\\\\user\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe -c \"from PIL import Image; print\\('Pillow OK'\\)\" 2>&1)",
+      "PowerShell(node --version 2>&1)",
+      "PowerShell(npm --version 2>&1)"
     ]
   }
 }
