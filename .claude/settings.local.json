@@ -13,7 +13,14 @@
       "PowerShell(Get-Command inkscape -ErrorAction SilentlyContinue)",
       "PowerShell(C:\\\\Users\\\\user\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe -c \"from PIL import Image; print\\('Pillow OK'\\)\" 2>&1)",
       "PowerShell(node --version 2>&1)",
-      "PowerShell(npm --version 2>&1)"
+      "PowerShell(npm --version 2>&1)",
+      "Bash(cwebp \"c:/workspace/rallye2026/sponsors/les-hommes-luxembourg.png\" -o \"c:/workspace/rallye2026/sponsors/les-hommes-luxembourg.webp\")",
+      "Bash(magick \"c:/workspace/rallye2026/sponsors/les-hommes-luxembourg.png\" \"c:/workspace/rallye2026/sponsors/les-hommes-luxembourg.webp\")",
+      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\"c:\\\\workspace\\\\rallye2026\\\\sponsors\\\\les-hommes-luxembourg.png\"\\); $img.Save\\(\"c:\\\\workspace\\\\rallye2026\\\\sponsors\\\\les-hommes-luxembourg.webp\", [System.Drawing.Imaging.ImageFormat]::Webp\\); $img.Dispose\\(\\); \"Done\")",
+      "Bash(node -e \"require\\('sharp'\\)\")",
+      "Bash(ffmpeg -i \"c:/workspace/rallye2026/sponsors/les-hommes-luxembourg.png\" \"c:/workspace/rallye2026/sponsors/les-hommes-luxembourg.webp\" -y)",
+      "Bash(python -c ' *)",
+      "Bash(python -c \"import pip; pip.main\\(['install', 'Pillow', '-q']\\)\")"
     ]
   }
 }
