@@ -264,6 +264,30 @@ article img {
   }
 }
 
+.sold-out {
+  position: relative;
+  filter: grayscale(100%);
+  opacity: 0.55;
+}
+
+.sold-out::after {
+  content: "SOLD OUT";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-20deg);
+  background: rgba(190, 20, 20, 0.88);
+  color: #fff;
+  padding: 0.35rem 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  border-radius: 0.3rem;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
 article hr {
   border: none;
   border-top: 2px solid #c9a84c;
